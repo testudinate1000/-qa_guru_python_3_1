@@ -1,4 +1,3 @@
-import time
 
 from selene.support.shared import browser
 from selene import be, have
@@ -17,7 +16,7 @@ browser.element('[id=subjectsInput]').should(be.blank).type('comp').press_enter(
 browser.element('label[for="hobbies-checkbox-1"]').should(be.enabled).click()
 browser.element('[id=currentAddress]').should(be.blank).type('79 Park Avenue')
 browser.element('[id=react-select-3-input]').should(be.blank).type('nc').press_enter()
-browser.element('[id=react-select-4-input]').should(be.blank).type('de').press_enter
+browser.element('[id=react-select-4-input]').should(be.blank).type('de').press_enter()
 browser.element('[id=uploadPicture]').should(be.clickable)
 browser.element('[id=submit]').should(be.clickable).click()
 
